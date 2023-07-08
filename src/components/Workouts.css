@@ -1,0 +1,119 @@
+.workout-container{
+    margin: auto;
+    width: fit-content;
+}
+
+h2.title{
+    margin: auto;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+
+.workout-card{
+    display: grid;
+    width: 600px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr; /* Set one column */
+    gap: 10px; /* Set the gap between grid items */
+    justify-content: space-between;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    animation: meal-show 1s linear;
+
+}
+
+.workout-card:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.workout-card > div> img{
+    width: 128px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.workout-card > div> h4{
+    font-size: 30px;
+    margin:auto;
+}
+
+.workout-card-general{
+    display: flex;
+    padding: 15px 10px 5px 10px;
+}
+
+.workout-info{
+    width:fit-content;
+    margin: auto;
+    height: 0;
+}
+
+.workout-info-extra{
+    display: flex;
+    font-size: 24px;
+    padding: 24px;
+}
+
+.workout-info-extra > h2{
+    padding-left: 25px;
+}
+
+.workout-info-extra > ul{
+    padding-right: 10px;
+    margin: auto;
+}
+
+.workout-info-animate{
+    animation: workout-animate 0.5s linear;
+    opacity: 1;
+    height: 430px;
+
+}
+
+.workout-info-animate-reverse{
+    animation: workout-animate-reverse 0.5s linear;
+    transform: translateY(0);
+    height:0;
+
+}
+
+@keyframes workout-show{
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity:1
+    }
+}
+
+@keyframes workout-animate{
+    0%{
+        transform: translateY(0);
+        height: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 430px;
+    }
+}
+
+@keyframes workout-animate-reverse{
+    0%{
+        opacity: 1;
+        height: 430px;
+    }
+    100%{
+        transform: translateY(0);
+        height: 0;
+
+    }
+}
+
+
+
+
+

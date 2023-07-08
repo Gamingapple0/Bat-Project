@@ -1,0 +1,8 @@
+.landing{
+    background-image: url('../images/batman-homepage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+    z-index: 0;
+    position: relative;
+
+}

@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../src/fonts/BebasNeue-Regular.ttf') format('truetype');
+  /* Add additional src declarations for other font weights or styles */
+  /* Example:
+     src: url('path/to/fonts/BebasNeue-Bold.ttf') format('truetype');
+  */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Oswald';
+  src: url('../src/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+  /* Add additional src declarations for other font weights or styles */
+  /* Example:
+     src: url('path/to/fonts/BebasNeue-Bold.ttf') format('truetype');
+  */
+}
+
+
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  /* Specify other font properties like font-size, font-weight, etc. */
 }

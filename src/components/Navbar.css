@@ -1,0 +1,195 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-image: url('../images/background-updated.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.navbar-items > * {
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45vw;
+}
+
+.navbar-items{
+    list-style: none;
+}
+
+.navbar-items > *{
+    margin-top: 20px;
+}
+.logo{
+    width: 120px;
+    margin-left: 4vw;
+    cursor: pointer;
+} 
+
+/*=== FADE IN DOWN ===*/
+
+.animate-fadeInDown {
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+
+  /* Text Underline */
+
+  a {
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-items> a:before {
+    content: '';
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    left: 18px;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before {
+    width:100%;
+  }
+
+/* Responsive */
+
+
+.nav {
+  height: 100px;
+  width: 100%;
+  /* background-color: #4d4d4d; */
+  position: relative;
+}
+
+.nav > .nav-header {
+  /* display: inline; */
+}
+
+.nav > .nav-header > .nav-title {
+  /* display: inline-block; */
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  z-index:0;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 0px 0px 5px 30px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    padding-top: 45px;
+
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index:1000;
+    background:linear-gradient(0deg, hsla(0, 72%, 25%, 1) 0%, hsla(0, 92%, 40%, 1) 100%);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    top: 100px;
+    left: 0px;
+    overflow-y: hidden;
+    overflow-x: clip;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(50vh - 50px);
+  }
+}
+
+
+.z-ind{
+  z-index: -1;
+  position: relative;
+}

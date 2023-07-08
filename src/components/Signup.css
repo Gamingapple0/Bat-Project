@@ -1,0 +1,217 @@
+  
+  /* Login Form Container */
+  
+  
+  .form-container{
+    transition: fadein 1s linear;
+      width:340px;
+      height: 550px;
+      background-color: #fff;
+      margin: auto;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow:  0 5px 10px 0px rgb(0 0 0 / 10%);
+      padding: 77px 55px 33px 55px;
+  }
+  
+  h3.title {
+    text-transform: capitalize;
+    font: bold 32px "open Sans", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .title{
+      text-align: center;
+  }
+  
+  /* Login Form Styles */
+  
+  form{
+      display:grid;
+  }
+  
+  form > input, button{
+      margin:0 0 20px 0;
+  }
+  
+  input {
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: hidden;
+      background-color: #fff;
+      height: 40px;
+      border-bottom: 2px solid #adadad;
+      font-size: large;
+      
+    }
+  input:focus{
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(0deg, hsla(0, 72%, 25%, 1) 0%, hsla(0, 92%, 40%, 1) 100%);
+      border-image-slice: 1;
+      outline: none;
+  }
+  
+  button.signin{
+      font-size: 15px;
+      color:#fff;
+      height: 50px;
+      border-radius: 10px;
+      background: rgb(73,172,186);
+      background: linear-gradient(0deg, hsla(0, 72%, 25%, 1) 0%, hsla(0, 92%, 40%, 1) 100%);
+      border: 0;
+  }
+  
+  button.sigin:hover{
+      cursor: pointer;
+  }
+  
+  .form-button {
+    align-items: center;
+    background: #ffffff;
+
+    color: black;
+    cursor: pointer;
+    transition: color 1s ease;
+    transition: background 1s ease;
+
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0deg, hsla(0, 72%, 25%, 1) 0%, hsla(0, 92%, 40%, 1) 100%);    
+    border-image-slice: 1;
+    outline: none;
+
+    border-radius: 0.25rem;
+    box-shadow: rgb(0 0 0 / 2%) 0 1px 3px 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+
+  .form-button:hover {
+    background: #b73d3d;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  .form-button:focus {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-image: linear-gradient(0deg, hsla(0, 72%, 25%, 1) 0%, hsla(0, 92%, 40%, 1) 100%);
+    border-image-slice: 1;
+    outline: none;
+  }
+
+  .form-button:active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+/* Password error message */
+  
+  .password-error{
+    position: absolute;
+    left: 0;
+    right:0;
+    margin: auto;
+    width:fit-content;
+    font-size: 25px;
+    background-color: #b73d3d;
+    border-radius: 3px;
+    color:#ffffff;
+    padding: 10px;
+    z-index: 10;
+    top:-70px;
+  }
+
+  .error-animate-down {
+    animation: password-error 0.4s linear;
+    animation-direction: normal;
+    top:50px;
+  }
+  
+  .error-animate-up{
+    animation: slideUp 0.5s linear;
+    top:-70px;
+  } 
+  
+  @keyframes slideUp{
+    0%{
+      top:50px;
+    }
+
+    100%{
+      top:-70px;
+    }
+  }
+
+  @keyframes password-error {
+    0% {
+      display: block;
+      top:-70px;
+    }
+    79%{
+      transform: translateX(0px);
+      timing-function: ease-out; 
+    }
+    80%{
+      transform: translateX(5px);
+      timing-function: ease-out;
+    }
+    81% {
+      transform: translateX(5px);
+      timing-function: ease-out;
+    }
+    82% {
+      transform: translateX(-5px);
+      timing-function: ease-in;
+    }
+    83% {
+      transform: translateX(4px);
+      timing-function: ease-out;
+    }
+    87% {
+      transform: translateX(-4px);
+      timing-function: ease-in;
+    }
+    91% {
+      transform: translateX(2px);
+      timing-function: ease-out;
+    }
+    96% {
+      transform: translateX(-2px);
+      timing-function: ease-in;
+    }
+    100% {
+      top:50px;
+      transform: translateX(0px);
+      timing-function: ease-in;
+      display:block
+    }
+  }
+  
+
+  @keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+  }

@@ -1,0 +1,113 @@
+@media (max-width:420px) {
+    .navbar-items> a:before{
+        bottom:-6px
+    }
+    a:hover::before {
+        width: 85px;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-text{
+        margin: 3vw 3vw 10px 4vw
+    }
+    .about-image > img.bat-img{
+        width: 79%;
+    }
+    h1.about-big-text{
+        font-size: 3.5em;
+    }
+    .slogan{
+        font-size:10vw;
+    }
+    div> h3{
+        font-size: 30px;
+    }
+    .frame{
+        height:550px;  
+        z-index: -1;
+        position: relative; 
+    }
+    footer{
+        margin-top: 30px;
+    }
+    .meal-card{
+        width: 97vw;
+        z-index: -1;
+    }
+    .meal-card-general{
+        width:100vw;
+    }
+    div.submit-button-wrapper{
+        margin: 0;
+        padding: 25px;
+    }
+    div.workout-card{
+        width: 97vw;
+        z-index: -1;
+    }
+    .workout-card-general{
+        width:100vw;
+    }
+    div.form-container{
+        width: 61VW;
+        height: 95VW;
+        
+    }
+    div.password-error{
+        top:-100px;
+    }
+    .submit-button{
+        z-index: -1;
+    }
+    main> div.profile-card{
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media(max-width:900px){
+    html{
+        overflow-x: hidden;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-text{
+        margin: 3vw 3vw 10px 4vw
+    }
+    .about-image > img.bat-img{
+        width: 79%;
+    }   
+    div.about-us{
+        height: fit-content;
+    }
+    .line-text{
+        font-size: 29px;
+        margin-top: -14px;
+    }
+    h1.about-big-text{
+        font-size: 3.5em;
+    }
+    .slogan{
+        font-size:8vw;
+    }
+    div> h3{
+        font-size: 30px;
+    }
+    .frame{
+        height:550px;  
+        z-index: -1;
+        position: relative; 
+    }
+    footer{
+        margin-top: 30px;
+    }
+    .navbar-items{
+        width:70vw;
+        font-size: 26px;
+    }
+    div.profile-card{
+        transform: translate(-50%, -97%);
+    }
+}

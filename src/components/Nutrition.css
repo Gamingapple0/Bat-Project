@@ -1,0 +1,219 @@
+.nutrition-generator{
+
+}
+
+.nutrition-container{
+    margin: auto;
+    width: fit-content;
+}
+
+h2.title{
+    margin: auto;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+
+.meal-card{
+    display: grid;
+    width: 600px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr; /* Set one column */
+    gap: 10px; /* Set the gap between grid items */
+    justify-content: space-between;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    animation: meal-show 1s linear;
+
+}
+
+.meal-card:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.meal-card > div> img{
+    width: 128px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.meal-card > div> h4{
+    font-size: 30px;
+    margin:auto;
+}
+
+.meal-card-general{
+    display: flex;
+}
+
+.meal-info{
+    width:fit-content;
+    margin: auto;
+    height: 0;
+}
+
+.meal-info-extra{
+    display: flex;
+}
+
+.meal-info-extra > h2{
+    padding-left: 25px;
+}
+
+.meal-info-extra > ul{
+    padding-right: 10px;
+    margin: auto;
+}
+
+.meal-info-animate{
+    animation: meal-animate 0.5s linear;
+    opacity: 1;
+    height: 430px;
+
+}
+
+.meal-info-animate-reverse{
+    animation: meal-animate-reverse 0.5s linear;
+    transform: translateY(0);
+    height:0;
+
+}
+
+@keyframes meal-show{
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity:1
+    }
+}
+
+@keyframes meal-animate{
+    0%{
+        transform: translateY(0);
+        height: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 430px;
+    }
+}
+
+@keyframes meal-animate-reverse{
+    0%{
+        opacity: 1;
+        height: 430px;
+    }
+    100%{
+        transform: translateY(0);
+        height: 0;
+
+    }
+}
+
+/* Submit button */
+
+
+.submit-button-wrapper{
+    width: fit-content;
+    margin: auto;
+}
+
+.submit-button {
+    position: relative;
+    padding: 8px 16px;
+    outline: none;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: color 1s ease;  
+    transition: background 1s ease;
+
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0deg, hsla(0, 72%, 25%, 1) 0%, hsla(0, 92%, 40%, 1) 100%);    
+    border-image-slice: 1;
+    outline: none;
+
+    border-radius: 0.25rem;
+    box-shadow: rgb(0 0 0 / 2%) 0 1px 3px 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.submit-button:hover {
+    /* color: #ffffff; */
+    transform: translateY(-1px);
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+.submit-button:focus
+{
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-image: linear-gradient(0deg, hsla(0, 72%, 25%, 1) 0%, hsla(0, 92%, 40%, 1) 100%);
+    border-image-slice: 1;
+    outline: none;
+}
+.submit-button:active {
+    background: #121212;
+    border: 1px solid black;
+}
+
+.submit-button__text {
+    transition: all 0.2s;
+}
+
+.submit-button--loading .submit-button__text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.submit-button--loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color:#b73d3d;
+    border-radius: 50%;
+    animation: button-loading-spinner 0.6s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+
