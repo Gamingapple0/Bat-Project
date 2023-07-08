@@ -38,6 +38,7 @@ function App() {
             <Route path="/workouts" element={<Workouts setLocation={setLocation}></Workouts>}></Route>
             <Route path="/signup" element={<Signup setLocation={setLocation}></Signup>}></Route>
             <Route path="/signin" element={<Signin setLocation={setLocation}></Signin>}></Route>
+            <Route path="*" element={<Home setLocation={setLocation}/>} />
         </Route>
     )
   )
