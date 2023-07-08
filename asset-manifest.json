@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Bat-Project/static/css/main.1f14d3b6.css",
+    "main.js": "/Bat-Project/static/js/main.8e2452b8.js",
+    "static/js/787.25a34389.chunk.js": "/Bat-Project/static/js/787.25a34389.chunk.js",
+    "static/media/batman-homepage.jpg": "/Bat-Project/static/media/batman-homepage.c015382ad5c0fa0c3b1b.jpg",
+    "static/media/background-updated.png": "/Bat-Project/static/media/background-updated.7751055dce20ee0fbbbb.png",
+    "static/media/Oswald-VariableFont_wght.ttf": "/Bat-Project/static/media/Oswald-VariableFont_wght.46d7853f0185f6bf0c93.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/Bat-Project/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/bat-project-logo.png": "/Bat-Project/static/media/bat-project-logo.269c61813580f9cdc1f8.png",
+    "static/media/logo.svg": "/Bat-Project/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Bat-Project/index.html",
+    "main.1f14d3b6.css.map": "/Bat-Project/static/css/main.1f14d3b6.css.map",
+    "main.8e2452b8.js.map": "/Bat-Project/static/js/main.8e2452b8.js.map",
+    "787.25a34389.chunk.js.map": "/Bat-Project/static/js/787.25a34389.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f14d3b6.css",
+    "static/js/main.8e2452b8.js"
+  ]
+}
