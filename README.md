@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Batman-Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Unleash Your Inner Dark Knight with a Unique Fitness Tracking Experience!
 
-## Available Scripts
+The Batman Project is a cutting-edge fitness tracking platform that combines the essence of the Dark Knight with advanced technologies to help you achieve your fitness goals. Powered by React for the frontend and Firebase for the backend, this project offers a seamless user experience with real-time data management and secure authentication.
 
-In the project directory, you can run:
+Technical Features:
 
-### `npm start`
+Utilizes External APIs: The website integrates two different APIs. The first fetches unique daily workouts that target different muscle groups, ensuring a varied and effective training routine. The second is a custom nutrition API that fetches unique meal plans, while JavaScript logic calculates and displays total macros and calories for each meal.
+React Frontend: The frontend of the Batman Project is built with React, providing a dynamic and interactive user interface that allows for smooth navigation and efficient data management.
+Firebase Backend: The project leverages Firebase for the backend, offering a reliable and scalable cloud infrastructure. Firebase Authentication enables secure user signup and login functionality, with password validation ensuring strong user credentials.
+Firebase Database: User data, including profile details such as age, weight, height, and gender, is stored in Firebase's Cloud Firestore database. This allows for seamless data synchronization and retrieval, ensuring a personalized experience for each user.
+GitHub Pages Hosting: The Batman Project will be hosted on GitHub Pages, providing a convenient and accessible platform for users to access and engage with the fitness tracking features.
+Key User Features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Signup and Login: Users can sign up using their email and password, with basic password validation for length. Firebase user creation and authentication handle secure access to user accounts.
+Profile Management: Once signed up, users gain access to the profile page where they can fill in their details such as age, weight, height, and gender. The profile page displays essential fitness stats, including BMI, BMR, required macros, and ideal weight.
+Data Persistence: User profile data is stored in Firebase's real-time database, allowing for seamless data retrieval and updates. The site manages Create, Read, and Update (CRU) operations, ensuring persistent user information across sessions.
+Signout and Signin: Users have the flexibility to sign out and sign in as desired, thanks to Firebase's authentication capabilities.
+Join the Batman Project and unlock your full fitness potential. Embrace the power of the Dark Knight as you track your workouts, discover unique meal plans, and conquer your fitness goals. With the fusion of cutting-edge technology and the indomitable spirit of Batman, you'll rise above the ordinary and become a true fitness hero.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is currently only the MVP of the webiste and I have a lot more features I'd like to add so contributions, feedback, and feature requests are welcome as we continue to evolve the Batman Project and inspire individuals worldwide to embrace the spirit of the Dark Knight in their pursuit of fitness excellence.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let the transformation begin. Join Batman Project now!
